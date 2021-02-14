@@ -32,7 +32,7 @@ class consultas {
             .then(Response => Response.json())
             .then(data => { 
                 elems.innerHTML += `
-                        <div  class="container_card fadeIn" >
+                        <div  class="container_card " >
                             <div class="img-conteiner">
                                     <img src="${data.image}" alt="">
                             </div>
@@ -40,6 +40,17 @@ class consultas {
                         </div>`
                 // console.log(data)
             })
+    
+    }
+
+    Pruebas (data) {
+        elems.innerHTML += `
+                        <div  class="container_card fadeIn" >
+                            <div class="img-conteiner">
+                                    <img src="${data.image}" alt="">
+                            </div>
+                            <h2>${data.name}</h2>
+                        </div>`
     }
 
     finDePagina(){
