@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+/* ------------------------Variables */
+:root{
+    /* colores */
+--green-color: #3ea34c;
+--blue-color: #9fcfcc;
+--meltal-color: #64877fd1;
+--fondo-color: #63c0b8a8;
+/* Tipografia */
+--normal:12px;
+/* espaciado */
+--space: 10px;
+
+/* box-shadow  */
+/* --box : 0px 0 2px 1px #e6e5e9 */
+--box :  0px 0px 30px -2px rgba(0,0,0,0.8);
+}
+/* ------------------------End Variables */
+
+.hiden{
+    display: none;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* background-color: var(--fondo-color); */
+    background-image: url('https://w.wallhaven.cc/full/od/wallhaven-odlkd7.jpg');
+    /* background-image: url('https://w.wallhaven.cc/full/0w/wallhaven-0w7vgr.png'); */
+    background-size: cover;
+    background-repeat:no-repeat ;
+    background-position: center;
+    background-attachment: fixed;
+    margin: auto;
+    /* max-width: 100vw;
+    height: 100vh; */
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    /* height: 96px; */
+    display: flex;
+    justify-content: center;
+    padding: 0 10px;
+    margin-top: 20px;
+    /* background-color: rgba(138, 82, 44, 0.4); */
+}
+.header_img img {
+    height: 150px;
+}
+
+
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1024px;
+    padding: 0 20px;
+    margin: 20px auto 50px;
+    /* background-color: var(--meltal-color); */
+}
+
+.container_buscador {
+    margin: 25px 0;
+}
+.buscador_lupa{
+    width: 20px;
+    position: relative;
+    top: 6px;
+    left: 25px;
+    opacity: .7;
+}
+#input_search{
+    height: 35px;
+    width: 300px;
+    padding-left: 25px;
+    opacity: .3;
+    border-radius: 15px;
+    border:solid black 1px;
+    outline: none;
+}
+#btn_iniciar{
+    width: 100px;
+    height: 30px;
+    background-color: var(--fondo-color);
+    font-size: 20px;
+    border: solid black 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+#btn_iniciar:hover {
+    box-shadow: var(--box);
+    }
+
+
+#container_main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.container_card{
+    margin: 10px;
+    width: 180px;
+    height: 250px;
+    border: solid black 1px;
+    background-color: var(--fondo-color);
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+   
+.img-conteiner{
+    margin: 5px 0;
+    width: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: var(--box);
+}
+.img-conteiner img{
+    width: 150px;
+    object-fit: cover;
+}
